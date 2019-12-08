@@ -1588,7 +1588,7 @@ h2 {
 
 .h3,
 h3 {
-    font-size: 24px
+    font-size: 20px
 }
 
 .h4,
@@ -6788,7 +6788,7 @@ a.list-group-item-danger.active:hover {
 }
 
 .well-lg {
-    padding: 24px;
+    padding: 20px;
     border-radius: 6px
 }
 

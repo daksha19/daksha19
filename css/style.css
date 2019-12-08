@@ -99,7 +99,7 @@ blockquote {
 
 blockquote p {
     margin-bottom: 1em;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
     font-style: normal;
     line-height: 1.6;
@@ -2083,7 +2083,7 @@ span.hs {
 .hs-line-3 {
     text-align: center;
     font-family: 'Dosis', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 2px;
     font-weight: 500;
     margin-bottom: 40px;
@@ -2289,6 +2289,7 @@ span.hs {
 }
 
 .about-quote p {
+    /* margin: 0 10%; */
     font-size: 18px;
 }
 
@@ -2328,8 +2329,8 @@ span.hs {
 
 .progress-box .progress-bar>span {
     display: inline-block;
-    min-width: 24px;
-    height: 24px;
+    min-width: 20px;
+    height: 20px;
     padding: 0 3px;
     position: absolute;
     top: 0px;
@@ -3507,7 +3508,7 @@ span.separator {
 span.icon-close {
     display: inline-block;
     margin-top: -10px;
-    font-size: 24px;
+    font-size: 20px;
     vertical-align: middle;
 }
 
@@ -3705,7 +3706,7 @@ span.icon-close {
     }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1020px) {
     .hs-line-5,
     .hs-line-1 {
         font-size: 3.5em;
@@ -3725,7 +3726,7 @@ span.icon-close {
         font-size: 2.3em;
     }
     .hs-line-first {
-        font-size: 24px;
+        font-size: 20px;
         letter-spacing: 0.4em;
     }
     .hs-line-second {
@@ -3815,6 +3816,12 @@ span.icon-close {
 }
 
 @media only screen and (max-width: 767px) {
+
+.about-quote p {
+    margin: 0 10%;
+
+}
+
    .eventimg{
        width:50%;
    }
