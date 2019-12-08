@@ -2368,8 +2368,8 @@ span.hs {
     height: 320px;
     margin: 20px 0;
     text-align: center;
-    border: 3px solid #f0f0f050;
-    border-radius: 5%;
+    border: 1px solid #f0f0f050;
+    border-radius: 2%;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -2396,11 +2396,17 @@ span.hs {
     color: rgb(204, 204, 204);
     position: relative;
     top: 80px;
-    -webkit-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -moz-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    /* -webkit-transition: all 500ms cubic-bezier(1,1); */
+    /* -moz-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
     -o-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
     -ms-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55); */
 }
 
 .service-item .service-desc {
@@ -2419,6 +2425,7 @@ span.hs {
     -o-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0);
+   margin-top: 50px;
 }
 
 .service-item:hover {
@@ -2428,11 +2435,11 @@ span.hs {
 }
 
 .service-item:hover i {
-    top: 20px;
+    top: 70px;
 }
 
 .service-item:hover h5 {
-    top: -30px;
+    top: 15px;
 }
 
 .service-item:hover .service-desc {
@@ -3808,6 +3815,9 @@ span.icon-close {
 }
 
 @media only screen and (max-width: 767px) {
+   .eventimg{
+       width:50%;
+   }
     .call-to-action h4,
     .call-to-action h5 {
         text-align: center;
@@ -3825,18 +3835,20 @@ span.icon-close {
         transform: scale(1.05);
     }
     .service-item i {
-        top: -30px;
+        top: -20px;
         font-size: 18px;
         background: black;
         margin-bottom: 0;
     }
     .service-item:hover i {
-        top: -30px;
+        top: -20px;
         font-size: 18px;
         margin-bottom: 0;
     }
 
-
+    .service-item:hover h5 {
+        top: -30px;
+    }
  
 
 
@@ -3844,8 +3856,12 @@ span.icon-close {
         top: -30px;
         margin-bottom: 0;
     }
+
+
     .service-item .service-desc {
         opacity: 1;
+        margin-top: -10px;
+       padding-bottom:  10px;
         -ms-filter: none;
         filter: none;
         -webkit-transform: scale(1);
@@ -4061,4 +4077,12 @@ span.icon-close {
         -ms-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
     }
+}
+
+.eventease {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
