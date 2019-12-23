@@ -3964,6 +3964,10 @@ span.icon-close {
         width: 100px;
         height: 100px;
     }
+
+    .alt-font{
+        font-size: 16px;
+    }
 }
 
 @-moz-keyframes slideShow {
