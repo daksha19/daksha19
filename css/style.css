@@ -3959,6 +3959,11 @@ span.icon-close {
     .owl-pagination {
         bottom: 10px;
     }
+
+    .contact-item img{
+        width: 100px;
+        height: 100px;
+    }
 }
 
 @-moz-keyframes slideShow {
