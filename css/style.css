@@ -18,7 +18,7 @@ body {
     font-family: 'Releway', sans-serif;
     font-size: 16px;
     color: #000;
-    background-color: black;
+    background-color: #111820;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-touch-callout: none;
@@ -74,12 +74,12 @@ h6 {
     margin-bottom: 1em;
     line-height: 1.4;
     font-weight: 400;
-    color: rgb(255, 236, 212);
+    color: #f1aa4b;
 }
 
 p {
     font-size: 15px;
-    color:rgb(223, 223, 223);
+    color:rgb(245, 244, 244);
     line-height: 1.7;
     font-weight: 300;
 }
@@ -1607,18 +1607,18 @@ a.logo:hover {
 }
 
 .main-nav.dark {
-    background-color: rgb(0, 0, 0, .8);
+    background-color:#111820ad;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
 
 .main-nav.dark .inner-nav ul>li>a {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.98);
 }
 
 .main-nav.dark .inner-nav ul>li>a:hover,
 .main-nav.dark .inner-nav ul>li>a.active {
-    color: #fff;
+    color: #f1aa4b;
 }
 
 .main-nav.dark .navbar-mobile {
@@ -2367,10 +2367,8 @@ span.hs {
 .service-item {
     width: 100%;
     height: 320px;
-    margin: 20px 0;
+    margin: 50px 0;
     text-align: center;
-    border: 1px solid #f0f0f050;
-    border-radius: 2%;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -2391,13 +2389,13 @@ span.hs {
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
     font-size: 18px;
+    color:#f1aa4b
 }
 
 .service-item h5 {
     color: rgb(204, 204, 204);
     position: relative;
     top: 80px;
-
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -2409,6 +2407,30 @@ span.hs {
     -ms-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55); */
 }
+
+
+.box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 230px;
+    height: 230px;
+    overflow: hidden;
+    z-index: -1;
+    border: 2px solid #f1aa4b;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+  }
+
+
+
 
 .service-item .service-desc {
     width: 80%;
@@ -2429,11 +2451,6 @@ span.hs {
    margin-top: 50px;
 }
 
-.service-item:hover {
-    background: right;
-    border-color: rgb(253, 219, 168);
-    transform: scale(1.02);
-}
 
 .service-item:hover i {
     top: 70px;
@@ -2452,6 +2469,11 @@ span.hs {
     -o-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
+}
+
+.service-item:hover .box {
+    background: #00b2ca;
+    transform: scale(2.5);
 }
 
 
@@ -2902,7 +2924,21 @@ span.hs {
     font-size: 32px;
     display: block;
     margin-bottom: 20px;
-    color: rgb(250, 204, 135);
+    color: #f1aa4b;
+}
+
+.contact-item img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px;
+  
+    object-fit: cover;
+    object-position: center right;
+}
+
+.contact-item p{
+    text-transform: initial;
 }
 
 .form-contact input {
@@ -3829,7 +3865,11 @@ span.icon-close {
     .call-to-action h5 {
         text-align: center;
     }
+    .box{
+        opacity: 0;
+    }
     .service-item {
+    border: 1px solid #f1aa4b;
 
     border-radius: 1%;
         margin: 25px 0;
@@ -3844,7 +3884,7 @@ span.icon-close {
     .service-item i {
         top: -20px;
         font-size: 18px;
-        background: black;
+        background: #111821;
         margin-bottom: 0;
     }
     .service-item:hover i {
