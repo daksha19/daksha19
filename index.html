@@ -33,6 +33,45 @@
             height: 100%;
             width: 100%;
         }
+
+        #clockdiv{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: #f1aa4b;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: #111820;
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+    font-size: 16px;
+    color:black;
+    font-weight: 400;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+
+    #clockdiv{
+        transform: scale(0.8);
+    }
+}
     </style>
 
 
@@ -97,8 +136,25 @@
                     <h1><img class="hs-line-1 wow fadeIn" src="img/daksha_logo_white.png" width="200px" /></h1>
                     <h1 data-wow-delay="0.5s" data-wow-duration="3s" class="hs-line-1 wow fadeIn" style="color:#f1aa4b">
                         Daksha '20</h1>
-
-                    <p id="timer"></p>
+                        <div id="clockdiv">
+                                <div class="row">
+                                  <span class="days"></span>
+                                  <div class="smalltext">Days</div>
+                                </div>
+                                <div>
+                                  <span class="hours"></span>
+                                  <div class="smalltext">Hours</div>
+                                </div>
+                                <div>
+                                  <span class="minutes"></span>
+                                  <div class="smalltext">Minutes</div>
+                                </div>
+                                <div>
+                                  <span class="seconds"></span>
+                                  <div class="smalltext">Seconds</div>
+                                </div>
+                              </div>
+                    <!-- <p id="timer"></p> -->
                 </div>
                 <!-- <div data-effect="fadeInUp" class="mt-30 animate-e"><a
                         href="#about"
@@ -471,36 +527,53 @@
      <script src="particles.min.js"></script>
 
     <script  src="particles.js"></script>
+
     <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("Feb 21, 2020 09:00:00").getTime();
 
-        // Update the count down every 1 second
-        var x = setInterval(function () {
+function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
 
-            // Get today's date and time
-            var now = new Date().getTime();
+function initializeClock(id, endtime) {
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
 
-            // Find the distance between now and the count down date
-            var distance = countDownDate - now;
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
 
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
-            // Display the result in the element with id="demo"
-            document.getElementById("timer").innerHTML = days + "D " + hours + "H "
-                + minutes + "M " + seconds + "S ";
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
 
-            // If the count down is finished, write some text 
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("timer").innerHTML = "EXPIRED";
-            }
-        }, 1000);
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+
+// var deadline = new Date(Date.parse(new Date()) + 59 * 24 * 60 * 60 * 1000);
+var deadline = new Date(Date.parse("Feb 21, 2020 09:00:00"));
+initializeClock('clockdiv', deadline);
     </script>
+   
     <script language="JavaScript">
         /**
           * Disable right-click of mouse, F12 key, and save key combinations on page
