@@ -4134,9 +4134,6 @@ span.icon-close {
 }
 .stars-overlay {
     position: absolute;
-    -ms-overflow-style: none;
-    -webkit-overflow-style: none;
-    overflow-y: auto;
     top: 0;
     left: 0;
     width: 100%;
