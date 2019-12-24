@@ -1248,7 +1248,7 @@ a.logo:hover {
 .inner-nav {
     display: inline-block;
     position: relative;
-    float: right;
+float: right;           
 }
 
 .inner-nav ul {
@@ -2429,9 +2429,6 @@ span.hs {
 
   }
 
-.box:hover{
-    border-size:50px;
-}
 
 
 .service-item .service-desc {
