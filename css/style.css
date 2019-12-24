@@ -2365,9 +2365,11 @@ span.hs {
    ============================== */
 
 .service-item {
+    border: 10px solid #f1aa4b;
     width: 100%;
     height: 320px;
     margin: 50px 0;
+    /* background: rgba(255, 255, 255, 0.411); */
     text-align: center;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -2378,9 +2380,9 @@ span.hs {
 
 .service-item i {
     position: relative;
-    top: 100px;
+    top: 10px;
     display: inline-block;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     padding: 10px;
     background:transparent;
     -webkit-transition: all 0.5s ease;
@@ -2395,7 +2397,6 @@ span.hs {
 .service-item h5 {
     color: rgb(204, 204, 204);
     position: relative;
-    top: 80px;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -2450,21 +2451,35 @@ span.hs {
    margin-top: 50px;
 }
 
+
+.service-item:hover {
+    border: 10px solid #ee9d32;
+    background: rgba(0, 0, 0, 0.521);
+
+
+} 
+/* 
 .service-item:hover i {
     top: 70px;
 
 
-}
+} */
+/* 
+.service-item:hover i {
+    top: 70px;
+
+
+} */
 #particle-div {
     margin: 0 auto;
     width:800px;
     height:500px;
 }
-.service-item:hover h5 {
+/* .service-item:hover h5 {
     top: 15px;
-}
+} */
 
-.service-item:hover .service-desc {
+/* .service-item:hover .service-desc {
     opacity: 1;
     -ms-filter: none;
     filter: none;
@@ -2478,9 +2493,13 @@ span.hs {
 .service-item:hover .box {
     background: #00b2ca;
     transform: scale(2.5);
+} */
+
+.service-item img{
+    width: 150px;
+
+    margin-top: 90px;
 }
-
-
 /* ==============================
    Portfolio
    ============================== */
@@ -3873,7 +3892,7 @@ span.icon-close {
         opacity: 0;
     }
     .service-item {
-    border: 1px solid #f1aa4b;
+    /* border: 1px solid #f1aa4b; */
 
     border-radius: 1%;
         margin: 25px 0;
@@ -3886,31 +3905,35 @@ span.icon-close {
         transform: scale(1.05);
     }
     .service-item i {
-        top: -20px;
+        /* top: -20px; */
         font-size: 18px;
         background: #111821;
         margin-bottom: 0;
     }
+
+    .service-item img {
+        width:50%;
+    }
     .service-item:hover i {
-        top: -20px;
+        /* top: -20px; */
         font-size: 18px;
         margin-bottom: 0;
     }
 
     .service-item:hover h5 {
-        top: -30px;
+        /* top: -30px; */
     }
  
 
 
     .service-item h5 {
-        top: -30px;
+        /* top: -30px; */
         margin-bottom: 0;
     }
 
 
     .service-item .service-desc {
-        opacity: 1;
+        opacity: 0;
         margin-top: -10px;
        padding-bottom:  10px;
         -ms-filter: none;
