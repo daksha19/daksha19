@@ -3901,7 +3901,10 @@ span.icon-close {
     }
     .service-item:hover {
         /* border: 11px; */
-        background: rgb(255, 255, 255,.01);
+        /* background: rgb(255, 255, 255,.01); */
+
+    background: rgba(0, 0, 0, 0.521);
+
         transform: scale(1.05);
     }
     .service-item i {
