@@ -3955,7 +3955,7 @@ span.icon-close {
 @media only screen and (max-width: 480px) {
     .hs-line-5,
     .hs-line-1 {
-        font-size: 2.5em;
+        font-size: 2.0em;
     }
     .hs-line-2 {
         font-size: 0.8em;
@@ -3990,6 +3990,13 @@ span.icon-close {
 
     .alt-font{
         font-size: 14px;
+    }
+    .topspace{
+        margin-top: -30px;
+    }
+
+    .topspace2{
+        margin-top: -50px;
     }
 }
 
