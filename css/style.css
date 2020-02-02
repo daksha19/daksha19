@@ -79,7 +79,7 @@ h6 {
 
 p {
     font-size: 15px;
-    color:rgb(245, 244, 244);
+    color: rgb(245, 244, 244);
     line-height: 1.7;
     font-weight: 300;
 }
@@ -503,10 +503,10 @@ section {
     margin: -25px 0 0 -25px;
     font-size: 10px;
     text-indent: -12345px;
-    border-top: 1px solid rgba(255,255,255,.08);
-    border-right: 1px solid rgba(255,255,255, 0.08);
-    border-bottom: 1px solid rgba(255,255,255, 0.08);
-    border-left: 1px solid rgba(255,255,255,0.7);
+    border-top: 1px solid rgba(255, 255, 255, .08);
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-left: 1px solid rgba(255, 255, 255, 0.7);
     -webkit-border-radius: 50%;
     border-radius: 50%;
     -webkit-animation: spinner 700ms infinite linear;
@@ -542,9 +542,9 @@ section {
     margin: -25px 0 0 -25px;
     font-size: 10px;
     text-indent: -12345px;
-    border-top: 1px solid rgba(255,255,255, 0.4);
-    border-right: 1px solid rgba(255,255,255, 0.4);
-    border-bottom: 1px solid rgba(255,255,255, 0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
     border-left: 1px solid black;
     -webkit-animation: spinner 700ms infinite linear;
     -moz-animation: spinner 700ms infinite linear;
@@ -877,8 +877,7 @@ section {
 }
 
 .btn-coffee.btn-border-w {
-    color:black;
-
+    color: black;
     background: rgba(255, 255, 255, 0.8);
     /* border: 2px solid rgba(255, 255, 255, 0.75); */
     /* background: transparent; */
@@ -1248,7 +1247,7 @@ a.logo:hover {
 .inner-nav {
     display: inline-block;
     position: relative;
-float: right;           
+    float: right;
 }
 
 .inner-nav ul {
@@ -1607,7 +1606,7 @@ float: right;
 }
 
 .main-nav.dark {
-    background-color:#111820ad;
+    background-color: #111820ad;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
@@ -2384,14 +2383,14 @@ span.hs {
     display: inline-block;
     margin-bottom: 10px;
     padding: 10px;
-    background:transparent;
+    background: transparent;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
     font-size: 18px;
-    color:#f1aa4b
+    color: #f1aa4b
 }
 
 .service-item h5 {
@@ -2408,7 +2407,6 @@ span.hs {
     -ms-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55); */
 }
-
 
 .box {
     position: absolute;
@@ -2427,10 +2425,7 @@ span.hs {
     -o-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-
-  }
-
-
+}
 
 .service-item .service-desc {
     width: 80%;
@@ -2448,36 +2443,41 @@ span.hs {
     -o-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0);
-   margin-top: 50px;
+    margin-top: 50px;
 }
-
 
 .service-item:hover {
     border: 10px solid #ee9d32;
     background: rgba(0, 0, 0, 0.521);
+}
 
 
-} 
 /* 
 .service-item:hover i {
     top: 70px;
 
 
 } */
+
+
 /* 
 .service-item:hover i {
     top: 70px;
 
 
 } */
+
 #particle-div {
     margin: 0 auto;
-    width:800px;
-    height:500px;
+    width: 800px;
+    height: 500px;
 }
+
+
 /* .service-item:hover h5 {
     top: 15px;
 } */
+
 
 /* .service-item:hover .service-desc {
     opacity: 1;
@@ -2495,11 +2495,12 @@ span.hs {
     transform: scale(2.5);
 } */
 
-.service-item img{
+.service-item img {
     width: 150px;
-
     margin-top: 90px;
 }
+
+
 /* ==============================
    Portfolio
    ============================== */
@@ -2950,17 +2951,16 @@ span.hs {
     color: #f1aa4b;
 }
 
-.contact-item img{
+.contact-item img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin: 20px;
-  
     object-fit: cover;
     object-position: center right;
 }
 
-.contact-item p{
+.contact-item p {
     text-transform: initial;
 }
 
@@ -3875,26 +3875,22 @@ span.icon-close {
 }
 
 @media only screen and (max-width: 767px) {
-
-.about-quote p {
-    margin: 0 10%;
-
-}
-
-   .eventimg{
-       width:50%;
-   }
+    .about-quote p {
+        margin: 0 10%;
+    }
+    .eventimg {
+        width: 50%;
+    }
     .call-to-action h4,
     .call-to-action h5 {
         text-align: center;
     }
-    .box{
+    .box {
         opacity: 0;
     }
     .service-item {
-    /* border: 1px solid #f1aa4b; */
-
-    border-radius: 1%;
+        /* border: 1px solid #f1aa4b; */
+        border-radius: 1%;
         margin: 25px 0;
         /* border: none; */
         height: auto;
@@ -3902,9 +3898,7 @@ span.icon-close {
     .service-item:hover {
         /* border: 11px; */
         /* background: rgb(255, 255, 255,.01); */
-
-    background: rgba(0, 0, 0, 0.521);
-
+        background: rgba(0, 0, 0, 0.521);
         transform: scale(1.05);
     }
     .service-item i {
@@ -3913,32 +3907,25 @@ span.icon-close {
         /* background: #111821; */
         margin-bottom: 0;
     }
-
     .service-item img {
-        width:50%;
+        width: 50%;
     }
     .service-item:hover i {
         /* top: -20px; */
         font-size: 18px;
         margin-bottom: 0;
     }
-
     .service-item:hover h5 {
         /* top: -30px; */
     }
- 
-
-
     .service-item h5 {
         /* top: -30px; */
         margin-bottom: 0;
     }
-
-
     .service-item .service-desc {
         opacity: 0;
         margin-top: -10px;
-       padding-bottom:  10px;
+        padding-bottom: 10px;
         -ms-filter: none;
         filter: none;
         -webkit-transform: scale(1);
@@ -3982,20 +3969,17 @@ span.icon-close {
     .owl-pagination {
         bottom: 10px;
     }
-
-    .contact-item img{
+    .contact-item img {
         width: 100px;
         height: 100px;
     }
-
-    .alt-font{
+    .alt-font {
         font-size: 14px;
     }
-    .topspace{
+    .topspace {
         margin-top: -30px;
     }
-
-    .topspace2{
+    .topspace2 {
         margin-top: -50px;
     }
 }
@@ -4171,6 +4155,7 @@ span.icon-close {
         transform: scale3d(1, 1, 1);
     }
 }
+
 .stars-overlay {
     position: fixed;
     overflow: hidden;
@@ -4178,7 +4163,8 @@ span.icon-close {
     left: 0;
     width: 100%;
     height: 100%;
-  }
+}
+
 .eventease {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
